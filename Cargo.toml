@@ -12,6 +12,7 @@ categories = ["data-structures", "no-std"]
 [dependencies]
 scopeguard = { version = "0.3", default-features = false }
 byteorder = { version = "1.0", default-features = false }
+packed_simd = { version = "0.3", features = ["into_bits"] }
 
 [dev-dependencies]
 rustc-hash = "1.0"

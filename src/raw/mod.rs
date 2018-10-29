@@ -24,7 +24,7 @@ fn likely(b: bool) -> bool {
     target_feature = "sse2",
     any(target_arch = "x86", target_arch = "x86_64")
 ))]
-#[path = "sse2.rs"]
+#[path = "neon.rs"]
 mod imp;
 #[cfg(not(all(
     target_feature = "sse2",
